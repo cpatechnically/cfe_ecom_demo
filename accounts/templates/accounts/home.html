@@ -1,0 +1,89 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+  <div class="col-12">
+    <h1>Account</h1>
+    <hr />
+    <div class="row">
+      <div class="col">
+        {{user.email}}
+      </div>
+    </div>
+  </div>
+
+  <div id="root"></div>
+
+  <div class="col-12 col-md-3 my-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Support</h4>
+        <div class="list-group">
+          <a class="list-group-item" href='{% url "about" %}'>About</a>
+          <a class="list-group-item" href='{% url "contact" %}'>Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-3 my-3" id="billing">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Billing</h4>
+        <div class="list-group">
+          <a class="list-group-item" href="{% url 'orders:list' %}">Orders</a>
+          <a class="list-group-item" href="">Payment Methods</a>
+          <a class="list-group-item" href="#">Addresses</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-3 my-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Account Details</h4>
+        <div class="list-group">
+          <a class="list-group-item" href='{% url "accounts:user-update" %}'>Update Details</a>
+          <a class="list-group-item" href='{% url "password_change" %}'>Change Password</a>
+          <a class="list-group-item" href='{% url "library" %}'>Library</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-3 my-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Preferences</h4>
+        <div class="list-group">
+          <a class="list-group-item" href="{% url 'accounts:marketing-pref' %}">Email Marketing</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-3 my-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">History</h4>
+        <div class="list-group">
+          <a class="list-group-item" href="{% url 'accounts:history-product' %}">Products</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if request.user.is_admin %}
+  <div class="col-12 col-md-3 my-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Firm</h4>
+        <div class="list-group">
+          <a class="list-group-item" href='#'>Sales</a>
+          <a class="list-group-item" href="#">Budget</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

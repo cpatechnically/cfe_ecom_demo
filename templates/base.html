@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Base Template</title>
+    {% include 'css.html' %}
+    {% include 'js.html' %}
+    {% block base_head %} {% endblock %}
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+    {% block javascript %} 
+    {% endblock %}
+    <script>
+    </script>
+  </body>
+</html>

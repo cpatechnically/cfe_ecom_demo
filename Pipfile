@@ -1,0 +1,35 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+black = "*"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+djangorestframework-jwt = "*"
+pillow = "*"
+autopep8 = "*"
+force = "*"
+requests = "*"
+psycopg2 = "*"
+dj-database-url = "*"
+gunicorn = "*"
+boto = "*"
+boto3 = "*"
+django-storages = "*"
+stripe = "*"
+sendgrid = "*"
+django-dotenv = "*"
+botocore = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

@@ -1,0 +1,107 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "Shoes",
+        "slug": "Shoes",
+        "description": "Shoes detail",
+        "price": "39.99",
+        "image": "products/581386276/581386276.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-11-22T20:53:17.247Z",
+        "is_digital": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Book",
+        "slug": "Book",
+        "description": "A book",
+        "price": "29.99",
+        "image": "products/2992813518/2992813518.jpg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-11-22T21:04:32.642Z",
+        "is_digital": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Headphones",
+        "slug": "headphones",
+        "description": "Headphone details",
+        "price": "129.99",
+        "image": "products/2795043153/2795043153.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-11-22T22:07:09.187Z",
+        "is_digital": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "Watch",
+        "slug": "watch",
+        "description": "Watch detail",
+        "price": "29.99",
+        "image": "products/3387336520/3387336520.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-11-22T22:08:37.137Z",
+        "is_digital": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt",
+        "description": "T shirt",
+        "price": "39.99",
+        "image": "products/280628057/280628057.jpg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-11-27T10:11:19.039Z",
+        "is_digital": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt-swnx",
+        "description": "Lowercase t shirt",
+        "price": "39.99",
+        "image": "products/100966289/100966289.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-11-27T10:13:34.642Z",
+        "is_digital": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "title": "CPA Letter",
+        "slug": "cpa-letter",
+        "description": "CPA Letter",
+        "price": "150.00",
+        "image": "products/40546457/40546457.PNG",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-11-30T13:26:39.103Z",
+        "is_digital": true
+    }
+}
+]
