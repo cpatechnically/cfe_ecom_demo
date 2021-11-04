@@ -193,11 +193,8 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_local_cdn', 'media_
 PROTECTED_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_local_cdn","protected")
 
 
-
-
-
-
 from djangoapi.static_srv.production import *
+
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_URLS_REGEX = r'^/api/.*$'

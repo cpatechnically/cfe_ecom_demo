@@ -9,6 +9,7 @@ pip-selfcheck.json
 # src/<yourproject>/settings/local.py
 # static-cdn/  # any collected static files 
 djangoapi/settings/local.py
+djangoapi/settings/base.py
 *.sqlite3
 db.sqlite3_
 .env
@@ -72,7 +73,6 @@ scripts/
 status/
 cfe_api/
 updates
-djangoapi/static_srv/aws.py
 
 # Flask stuff:
 instance/
