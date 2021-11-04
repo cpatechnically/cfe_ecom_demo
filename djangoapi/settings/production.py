@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-SETTINGS_MODULE = 'production'
+MODULE = 'production'
 
 
 #from djangoapi.restconf.main import *
@@ -22,7 +22,6 @@ import os
 BASE_DIR = os.path.dirname(Path(__file__).resolve().parent.parent)
 manage_path = os.path.join(BASE_DIR,"manage.py")
 print(f"manage_path EXISTS? {manage_path} \n{os.path.exists(manage_path)}")
-print(SETTINGS_MODULE, BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -195,12 +194,6 @@ PROTECTED_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_local_cdn","pro
 
 
 
-try:
-    print(f'{SETTINGS_MODULE} static files Static Root:', STATIC_ROOT)
-    print(f'{SETTINGS_MODULE} static files Media Root:', MEDIA_ROOT)
-    print(f'{SETTINGS_MODULE} static files Protected Root:', PROTECTED_ROOT)
-except:
-    print(f'no media root or pretected roo in {SETTINGS_MODULE}')
 
 
 

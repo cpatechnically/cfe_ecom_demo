@@ -9,7 +9,4 @@ from .production import *
 # except:
 #     pass
 
-if winner != None:
-    print('last init settings:', winner)
-else:
-    print('no winner')
+print(f"\nSETTINGS MODULE IS.. {MODULE} \nDATABASES['default'] -> {DATABASES['default']} \nALLOWED_HOSTS {ALLOWED_HOSTS} \nBASE_DIR {BASE_DIR} \nSTATICFILES_DIRS {STATICFILES_DIRS} \nDEBUG {DEBUG}")
